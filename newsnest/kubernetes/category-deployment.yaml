@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: category-service
-          image: YOUR_DOCKERHUB_USERNAME/newsnest-category-service:latest
+          image: shivam985/newsnest-category-service:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 4002

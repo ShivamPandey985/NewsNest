@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: api-gateway
-          image: YOUR_DOCKERHUB_USERNAME/newsnest-api-gateway:latest
+          image: shivam985/newsnest-api-gateway:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 4000
