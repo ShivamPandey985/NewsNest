@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Article — NewsNest</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/animations.css" />
+<link rel="stylesheet" href="css/themes.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<script src="config.js"></script>
+<style>
+  .article-detail { max-width: 760px; margin: 0 auto; }
+  .article-detail-title { font-size: clamp(1.6rem, 3.5vw, 2.3rem); margin-bottom: 10px; }
+  .article-detail-author { color: var(--text-muted); margin-bottom: 20px; font-size: 0.9rem; }
+  .article-detail-image { border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 24px; box-shadow: var(--shadow-md); }
+  .article-detail-image img { width: 100%; }
+  .article-detail-body { font-size: 1.05rem; color: var(--text-secondary); white-space: pre-line; margin-bottom: 32px; }
+  .article-detail-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+
+<div id="navbar-root"></div>
+
+<main class="page-main">
+  <section class="section">
+    <div class="container">
+      <div id="articleContent"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container" style="max-width:900px;">
+      <div class="section-header">
+        <h2 class="section-title">Related Articles</h2>
+      </div>
+      <div class="grid-articles" id="relatedGrid"></div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-root"></div>
+
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/offline.js"></script>
+<script src="js/skeleton.js"></script>
+<script src="js/state.js"></script>
+<script src="js/router.js"></script>
+<script src="js/components/navbar.js"></script>
+<script src="js/components/footer.js"></script>
+<script src="js/components/articleCard.js"></script>
+<script src="js/pages/article.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* Theme-specific overrides beyond CSS variables */
+
+[data-theme="dark"] .article-card-bookmark {
+  background: rgba(28, 30, 53, 0.9);
+  color: #f3f4f9;
+}
+
+[data-theme="dark"] .navbar {
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="dark"] .hero-bg-animated {
+  opacity: 0.9;
+}
+
+[data-theme="dark"] ::selection {
+  background: rgba(139, 92, 246, 0.4);
+}
+
+::selection {
+  background: rgba(99, 102, 241, 0.25);
+}
+
+.theme-toggle-icon {
+  font-size: 1.15rem;
+}

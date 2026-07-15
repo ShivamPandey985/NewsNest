@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NewsNest — Personalized News For Everyone</title>
+<meta name="description" content="NewsNest aggregates news from across the world and personalizes it to your interests — UPSC, Tech, Business, Sports, and more." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/animations.css" />
+<link rel="stylesheet" href="css/themes.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<script src="config.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-brand">📰 NewsNest</a>
+    <div class="navbar-links">
+      <a href="index.html" class="navbar-link active">Home</a>
+      <a href="about.html" class="navbar-link">About</a>
+    </div>
+    <div class="navbar-actions">
+      <button class="btn-icon" data-theme-toggle aria-label="Toggle theme">
+        <span data-theme-icon class="theme-toggle-icon">🌙</span>
+      </button>
+      <button class="btn btn-primary" id="landingCtaNav" style="padding:10px 20px;">Get Started</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="hero-bg-animated" style="padding: calc(var(--nav-height) + 80px) 0 100px; color:#fff; position:relative; overflow:hidden;">
+    <div class="container" style="display:grid; grid-template-columns: 1.1fr 0.9fr; gap:48px; align-items:center;">
+      <div class="fade-in-up">
+        <span class="badge" style="background:rgba(255,255,255,0.18); color:#fff;">✨ Your world, your news</span>
+        <h1 style="font-size: clamp(2.2rem, 5vw, 3.4rem); margin: 20px 0 18px; color:#fff;">
+          News that actually matches <span style="text-decoration: underline; text-decoration-color: rgba(255,255,255,0.5);">what you care about</span>
+        </h1>
+        <p style="font-size:1.1rem; opacity:0.92; max-width:520px; margin-bottom:32px;">
+          Whether you're prepping for UPSC, tracking the stock market, following cricket, or just curious about AI — NewsNest builds your homepage around your interests.
+        </p>
+        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+          <button class="btn" id="landingCta" style="background:#fff; color:#4f46e5; box-shadow: var(--shadow-lg);">Get Started Free →</button>
+          <button class="btn btn-outline" id="landingSecondaryCta" style="border-color: rgba(255,255,255,0.4); color:#fff;">Learn More</button>
+        </div>
+      </div>
+      <div class="hero-float" style="justify-self:center;">
+        <div class="glass-card" style="padding:28px; width: 320px; background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.25);">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:16px;">
+            <span class="pulse-dot"></span>
+            <span style="font-size:0.85rem; font-weight:600; color:#fff;">LIVE TRENDING</span>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:14px;">
+            <div style="background:rgba(255,255,255,0.14); border-radius:12px; padding:14px;">
+              <div style="font-size:0.72rem; opacity:0.8; margin-bottom:4px; color:#fff;">TECHNOLOGY</div>
+              <div style="font-weight:600; color:#fff;">AI breakthroughs reshape global industries</div>
+            </div>
+            <div style="background:rgba(255,255,255,0.14); border-radius:12px; padding:14px;">
+              <div style="font-size:0.72rem; opacity:0.8; margin-bottom:4px; color:#fff;">CRICKET</div>
+              <div style="font-weight:600; color:#fff;">Series decider set for this weekend</div>
+            </div>
+            <div style="background:rgba(255,255,255,0.14); border-radius:12px; padding:14px;">
+              <div style="font-size:0.72rem; opacity:0.8; margin-bottom:4px; color:#fff;">ECONOMY</div>
+              <div style="font-weight:600; color:#fff;">Markets react to policy announcement</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header" style="justify-content:center; text-align:center; flex-direction:column;">
+        <h2 class="section-title">Built for everyone, personalized for you</h2>
+        <p style="color:var(--text-secondary); max-width:560px;">Pick from 20+ interests and get a homepage that's actually relevant.</p>
+      </div>
+      <div class="grid-categories">
+        <div class="category-card fade-in-up stagger-1"><span class="category-card-icon">📜</span><span class="category-card-name">UPSC</span></div>
+        <div class="category-card fade-in-up stagger-2"><span class="category-card-icon">💻</span><span class="category-card-name">Technology</span></div>
+        <div class="category-card fade-in-up stagger-3"><span class="category-card-icon">📈</span><span class="category-card-name">Economy</span></div>
+        <div class="category-card fade-in-up stagger-4"><span class="category-card-icon">🏏</span><span class="category-card-name">Cricket</span></div>
+        <div class="category-card fade-in-up stagger-5"><span class="category-card-icon">🚀</span><span class="category-card-name">Startups</span></div>
+        <div class="category-card fade-in-up stagger-6"><span class="category-card-icon">🔭</span><span class="category-card-name">Science</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header" style="justify-content:center; text-align:center; flex-direction:column;">
+        <h2 class="section-title">Why NewsNest</h2>
+      </div>
+      <div class="grid-categories" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));">
+        <div class="glass-card fade-in-up stagger-1" style="padding:28px;">
+          <div style="font-size:2rem; margin-bottom:12px;">🎯</div>
+          <h3 style="margin-bottom:8px;">Personalized Feed</h3>
+          <p style="color:var(--text-secondary); font-size:0.92rem;">Your homepage adapts to the interests you pick — no noise, just what matters to you.</p>
+        </div>
+        <div class="glass-card fade-in-up stagger-2" style="padding:28px;">
+          <div style="font-size:2rem; margin-bottom:12px;">⚡</div>
+          <h3 style="margin-bottom:8px;">Always Fresh</h3>
+          <p style="color:var(--text-secondary); font-size:0.92rem;">Trending, latest and breaking news updated regularly from a trusted source.</p>
+        </div>
+        <div class="glass-card fade-in-up stagger-3" style="padding:28px;">
+          <div style="font-size:2rem; margin-bottom:12px;">🔖</div>
+          <h3 style="margin-bottom:8px;">Save For Later</h3>
+          <p style="color:var(--text-secondary); font-size:0.92rem;">Bookmark articles and revisit them anytime, stored right in your browser.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-root"></div>
+
+<script src="js/storage.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/components/footer.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => { Footer.render(); ThemeManager.init(); });</script>
+<script src="js/pages/landing.js"></script>
+</body>
+</html>

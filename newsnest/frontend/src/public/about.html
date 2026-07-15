@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — NewsNest</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/animations.css" />
+<link rel="stylesheet" href="css/themes.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<script src="config.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-brand">📰 NewsNest</a>
+    <div class="navbar-links">
+      <a href="index.html" class="navbar-link">Home</a>
+      <a href="about.html" class="navbar-link active">About</a>
+    </div>
+    <div class="navbar-actions">
+      <button class="btn-icon" data-theme-toggle aria-label="Toggle theme">
+        <span data-theme-icon class="theme-toggle-icon">🌙</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="page-main">
+  <section class="section">
+    <div class="container" style="max-width:800px;">
+      <h1 class="fade-in-up" style="font-size:2.4rem; margin-bottom:20px;">About NewsNest</h1>
+      <p class="fade-in-up stagger-1" style="color:var(--text-secondary); font-size:1.05rem; margin-bottom:24px;">
+        NewsNest is a personalized news aggregator built for absolutely everyone — not just professionals or journalists.
+        Whether you're preparing for the UPSC exam, tracking the stock market, following your favorite cricket team,
+        or just curious about the latest in AI, NewsNest curates a homepage tailored to what matters to you.
+      </p>
+      <p class="fade-in-up stagger-2" style="color:var(--text-secondary); font-size:1.05rem; margin-bottom:24px;">
+        We aggregate articles from a trusted news source and organize them across 20+ interest categories —
+        from Government Policies and International Affairs to Startups, Health, Sports, Science, and Entertainment.
+        You choose your interests once, and your homepage adapts automatically.
+      </p>
+      <div class="grid-categories" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); margin-top:40px;">
+        <div class="glass-card fade-in-up stagger-1" style="padding:24px;">
+          <div style="font-size:1.8rem; margin-bottom:10px;">🔒</div>
+          <h3 style="margin-bottom:6px; font-size:1rem;">Privacy First</h3>
+          <p style="color:var(--text-secondary); font-size:0.88rem;">Your name, interests and bookmarks stay in your browser — never on a server.</p>
+        </div>
+        <div class="glass-card fade-in-up stagger-2" style="padding:24px;">
+          <div style="font-size:1.8rem; margin-bottom:10px;">🌐</div>
+          <h3 style="margin-bottom:6px; font-size:1rem;">One Trusted Source</h3>
+          <p style="color:var(--text-secondary); font-size:0.88rem;">We aggregate from a single reliable news API, normalized for consistency.</p>
+        </div>
+        <div class="glass-card fade-in-up stagger-3" style="padding:24px;">
+          <div style="font-size:1.8rem; margin-bottom:10px;">⚙️</div>
+          <h3 style="margin-bottom:6px; font-size:1rem;">Modern Architecture</h3>
+          <p style="color:var(--text-secondary); font-size:0.88rem;">Built with a microservices architecture, containerized with Docker and Kubernetes-ready.</p>
+        </div>
+      </div>
+      <div class="fade-in-up stagger-4" style="margin-top:40px;">
+        <a href="index.html" class="btn btn-primary">Back to Home</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-root"></div>
+
+<script src="js/storage.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/components/footer.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => { Footer.render(); ThemeManager.init(); });</script>
+</body>
+</html>

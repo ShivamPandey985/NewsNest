@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Welcome — NewsNest</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/animations.css" />
+<link rel="stylesheet" href="css/themes.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<script src="config.js"></script>
+<style>
+  .onboard-wrap {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  .onboard-card {
+    width: 100%;
+    max-width: 640px;
+    padding: 40px;
+  }
+  .progress-track {
+    height: 6px;
+    background: var(--border-color);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--gradient-primary);
+    width: 33%;
+    transition: width var(--transition-medium);
+  }
+  .onboard-step { display: none; }
+  .onboard-step.active { display: block; animation: fade-in-up 0.4s ease; }
+  .theme-choice-row { display: flex; gap: 14px; margin-top: 10px; }
+  .theme-choice-card {
+    flex: 1;
+    padding: 20px;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--border-color);
+    text-align: center;
+    transition: border-color var(--transition-fast), transform var(--transition-fast);
+  }
+  .theme-choice-card.selected { border-color: var(--accent); transform: translateY(-3px); }
+  .onboard-actions { display: flex; justify-content: space-between; margin-top: 32px; gap: 12px; }
+</style>
+</head>
+<body>
+
+<div class="onboard-wrap hero-bg-animated">
+  <div class="glass-card onboard-card" style="background: var(--bg-elevated); border-color: var(--border-color);">
+    <a href="index.html" class="navbar-brand" style="margin-bottom: 20px; display:inline-block;">📰 NewsNest</a>
+
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+    <p id="stepLabel" style="color:var(--text-muted); font-size:0.85rem; margin-bottom:28px;">Step 1 of 3</p>
+
+    <div class="onboard-step active" data-step="1">
+      <h2 style="margin-bottom:8px;">What should we call you?</h2>
+      <p style="color:var(--text-secondary); margin-bottom:20px;">We'll use this to personalize your homepage greeting.</p>
+      <div class="form-group">
+        <label for="userNameInput">Your Name</label>
+        <input type="text" id="userNameInput" placeholder="e.g. Aarav Sharma" autocomplete="name" />
+      </div>
+      <div class="onboard-actions">
+        <span></span>
+        <button class="btn btn-primary" data-next>Continue →</button>
+      </div>
+    </div>
+
+    <div class="onboard-step" data-step="2">
+      <h2 style="margin-bottom:8px;">Choose your interests</h2>
+      <p style="color:var(--text-secondary); margin-bottom:20px;">Pick as many as you like — you can change these anytime in Settings.</p>
+      <div id="interestPickerContainer" style="max-height: 340px; overflow-y:auto; padding-right:4px;"></div>
+      <div class="onboard-actions">
+        <button class="btn btn-outline" data-back>← Back</button>
+        <button class="btn btn-primary" data-next>Continue →</button>
+      </div>
+    </div>
+
+    <div class="onboard-step" data-step="3">
+      <h2 style="margin-bottom:8px;">Pick your theme</h2>
+      <p style="color:var(--text-secondary); margin-bottom:10px;">You can switch anytime from the navbar.</p>
+      <div class="theme-choice-row">
+        <button type="button" class="theme-choice-card" data-theme-choice="light">☀️<br/>Light</button>
+        <button type="button" class="theme-choice-card" data-theme-choice="dark">🌙<br/>Dark</button>
+      </div>
+      <div class="onboard-actions">
+        <button class="btn btn-outline" data-back>← Back</button>
+        <button class="btn btn-primary" id="finishOnboarding">Start Reading 🎉</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/skeleton.js"></script>
+<script src="js/components/interestPicker.js"></script>
+<script src="js/pages/onboarding.js"></script>
+</body>
+</html>

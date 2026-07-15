@@ -1,0 +1,26 @@
+{
+  "categories": [
+    { "id": "upsc", "name": "UPSC", "icon": "📜", "keywords": ["UPSC", "civil services India", "IAS exam", "government exam India"] },
+    { "id": "government-policies", "name": "Government Policies", "icon": "🏛️", "keywords": ["government policy", "parliament", "judiciary", "legislation", "policy reform"] },
+    { "id": "international-affairs", "name": "International Affairs", "icon": "🌍", "keywords": ["international relations", "diplomacy", "United Nations", "foreign policy", "geopolitics"] },
+    { "id": "technology", "name": "Technology", "icon": "💻", "keywords": ["technology", "AI", "artificial intelligence", "cloud computing", "Microsoft", "Google", "gadgets"] },
+    { "id": "artificial-intelligence", "name": "Artificial Intelligence", "icon": "🤖", "keywords": ["artificial intelligence", "machine learning", "AI model", "generative AI", "LLM"] },
+    { "id": "programming", "name": "Programming", "icon": "👨‍💻", "keywords": ["programming", "software development", "open source", "coding", "developer tools"] },
+    { "id": "business", "name": "Business", "icon": "💼", "keywords": ["business", "corporate", "industry", "mergers", "acquisitions"] },
+    { "id": "finance", "name": "Finance", "icon": "💰", "keywords": ["finance", "banking", "investment", "financial markets"] },
+    { "id": "economy", "name": "Economy", "icon": "📈", "keywords": ["economy", "GDP", "inflation", "economic policy", "trade"] },
+    { "id": "stock-market", "name": "Stock Market", "icon": "📊", "keywords": ["stock market", "shares", "equity", "Nasdaq", "Sensex", "Nifty"] },
+    { "id": "startups", "name": "Startups", "icon": "🚀", "keywords": ["startup", "venture capital", "funding round", "unicorn startup"] },
+    { "id": "health", "name": "Health", "icon": "🏥", "keywords": ["health", "wellness", "public health", "healthcare"] },
+    { "id": "medical-research", "name": "Medical Research", "icon": "🔬", "keywords": ["medical research", "clinical trial", "vaccine", "disease study"] },
+    { "id": "sports", "name": "Sports", "icon": "🏅", "keywords": ["sports", "olympics", "athletics", "tournament"] },
+    { "id": "cricket", "name": "Cricket", "icon": "🏏", "keywords": ["cricket", "IPL", "ICC", "test match", "T20"] },
+    { "id": "football", "name": "Football", "icon": "⚽", "keywords": ["football", "soccer", "FIFA", "Premier League", "Champions League"] },
+    { "id": "education", "name": "Education", "icon": "🎓", "keywords": ["education", "university", "school", "exam results", "e-learning"] },
+    { "id": "science", "name": "Science", "icon": "🔭", "keywords": ["science", "research", "discovery", "physics", "biology"] },
+    { "id": "environment", "name": "Environment", "icon": "🌱", "keywords": ["environment", "climate change", "sustainability", "pollution", "conservation"] },
+    { "id": "space", "name": "Space", "icon": "🛰️", "keywords": ["space", "NASA", "ISRO", "rocket launch", "astronomy"] },
+    { "id": "cybersecurity", "name": "Cybersecurity", "icon": "🔐", "keywords": ["cybersecurity", "data breach", "hacking", "ransomware", "cyber attack"] },
+    { "id": "entertainment", "name": "Entertainment", "icon": "🎬", "keywords": ["entertainment", "movies", "celebrity", "music industry", "streaming"] }
+  ]
+}

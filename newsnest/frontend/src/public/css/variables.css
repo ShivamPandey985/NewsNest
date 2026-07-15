@@ -1,0 +1,52 @@
+:root {
+  /* Brand gradient */
+  --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+  --gradient-hero: linear-gradient(135deg, #4f46e5 0%, #7c3aed 45%, #db2777 100%);
+  --gradient-card: linear-gradient(160deg, rgba(99,102,241,0.12), rgba(236,72,153,0.08));
+
+  /* Light theme (default) */
+  --bg-primary: #f8f9fc;
+  --bg-secondary: #ffffff;
+  --bg-elevated: #ffffff;
+  --bg-glass: rgba(255, 255, 255, 0.65);
+  --text-primary: #14152b;
+  --text-secondary: #565873;
+  --text-muted: #8b8da3;
+  --border-color: rgba(20, 21, 43, 0.08);
+  --shadow-sm: 0 2px 8px rgba(20, 21, 43, 0.06);
+  --shadow-md: 0 8px 24px rgba(20, 21, 43, 0.10);
+  --shadow-lg: 0 20px 48px rgba(20, 21, 43, 0.16);
+  --accent: #6366f1;
+  --accent-hover: #4f46e5;
+  --success: #22c55e;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-full: 999px;
+
+  --font-heading: 'Poppins', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+
+  --nav-height: 72px;
+  --container-width: 1280px;
+
+  --transition-fast: 0.18s ease;
+  --transition-medium: 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0e0f1a;
+  --bg-secondary: #15172a;
+  --bg-elevated: #1c1e35;
+  --bg-glass: rgba(21, 23, 42, 0.65);
+  --text-primary: #f3f4f9;
+  --text-secondary: #b6b8cc;
+  --text-muted: #7c7e97;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.5);
+}

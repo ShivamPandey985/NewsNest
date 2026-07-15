@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: newsnest-config
+  labels:
+    app: newsnest
+data:
+  NODE_ENV: "production"
+  API_VERSION: "v1"
+  CACHE_TTL_MS: "300000"
+  NEWS_API_BASE_URL: "https://newsapi.org/v2"
+  NEWS_SERVICE_URL: "http://news-service:4001"
+  CATEGORY_SERVICE_URL: "http://category-service:4002"
+  ALLOWED_ORIGINS_GATEWAY: "http://frontend:8080"
+  ALLOWED_ORIGINS_INTERNAL: "http://api-gateway:4000"
+  # Empty on purpose: the Ingress routes /api/* on the SAME host to api-gateway,
+  # so the frontend can call a relative "/api/v1" path. If you expose api-gateway
+  # on a different host/port instead, set this to that full origin (e.g. https://api.example.com).
+  API_GATEWAY_URL: ""

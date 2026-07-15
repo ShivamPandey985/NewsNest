@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Search — NewsNest</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/animations.css" />
+<link rel="stylesheet" href="css/themes.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<script src="config.js"></script>
+</head>
+<body>
+
+<div id="navbar-root"></div>
+
+<main class="page-main">
+  <section style="padding: 40px 0 24px;">
+    <div class="container">
+      <h1 class="fade-in-up" style="font-size:1.8rem; margin-bottom:20px;">Search News</h1>
+      <form id="searchForm" class="search-bar" style="max-width:600px;">
+        <span>🔍</span>
+        <input type="text" id="searchInput" placeholder="Search for topics, people, events..." autocomplete="off" />
+        <button type="submit" class="btn btn-primary" style="padding:9px 20px;">Search</button>
+      </form>
+      <p id="searchResultsInfo" style="color:var(--text-muted); margin-top:16px; font-size:0.9rem;"></p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="grid-articles" id="searchResultsGrid"></div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-root"></div>
+
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/offline.js"></script>
+<script src="js/skeleton.js"></script>
+<script src="js/state.js"></script>
+<script src="js/router.js"></script>
+<script src="js/components/navbar.js"></script>
+<script src="js/components/footer.js"></script>
+<script src="js/components/articleCard.js"></script>
+<script src="js/pages/search.js"></script>
+</body>
+</html>

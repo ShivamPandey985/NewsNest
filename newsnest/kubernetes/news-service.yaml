@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: news-service
+  labels:
+    app: newsnest
+    component: news-service
+spec:
+  type: ClusterIP
+  selector:
+    app: newsnest
+    component: news-service
+  ports:
+    - port: 4001
+      targetPort: 4001
+      protocol: TCP

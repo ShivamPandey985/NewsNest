@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Categories — NewsNest</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/animations.css" />
+<link rel="stylesheet" href="css/themes.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<script src="config.js"></script>
+</head>
+<body>
+
+<div id="navbar-root"></div>
+
+<main class="page-main">
+  <section style="padding: 40px 0 8px;">
+    <div class="container">
+      <h1 class="fade-in-up" style="font-size:1.8rem;">Browse by Category</h1>
+      <p style="color:var(--text-secondary); margin-top:6px;">Explore news across every interest area.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:20px;">
+    <div class="container">
+      <div id="categoryChipList" style="margin-bottom:32px;"></div>
+      <div class="section-header">
+        <h2 class="section-title" id="activeCategoryTitle">Category</h2>
+      </div>
+      <div class="grid-articles" id="categoryResultsGrid"></div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-root"></div>
+
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/offline.js"></script>
+<script src="js/skeleton.js"></script>
+<script src="js/state.js"></script>
+<script src="js/router.js"></script>
+<script src="js/components/navbar.js"></script>
+<script src="js/components/footer.js"></script>
+<script src="js/components/articleCard.js"></script>
+<script src="js/pages/category.js"></script>
+</body>
+</html>
